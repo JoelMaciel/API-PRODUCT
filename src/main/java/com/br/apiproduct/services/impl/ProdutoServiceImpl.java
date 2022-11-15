@@ -13,6 +13,7 @@ public class ProdutoServiceImpl implements ProductService {
     private final ProductRepository productRepository;
 
     public ProdutoServiceImpl(ProductRepository productRepository) {
+
         this.productRepository = productRepository;
     }
 
@@ -23,6 +24,7 @@ public class ProdutoServiceImpl implements ProductService {
 
     @Override
     public Product save(Product product) {
+
         return productRepository.save(product);
     }
 
